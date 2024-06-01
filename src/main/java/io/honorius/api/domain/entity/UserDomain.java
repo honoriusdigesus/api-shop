@@ -16,7 +16,7 @@ public class UserDomain {
     public UserDomain(BigInteger cc, String name, String lastname) {
         this.cc = cc;
         this.name = name;
-        this.lastname = lastname;
+        this.lastname = (lastname == null || lastname.trim().isEmpty()) ? "Last name does not register" : lastname;
     }
 
     public Integer getId() {
