@@ -20,24 +20,38 @@ public class Validator {
             return false;
         }
 
-        if (!ccString.matches("-?\\d+")){
+        if (!ccString.matches("-?\\d+")) {
             return false;
         }
         return true;
     }
 
-    public Boolean isValidName(String name){
-        if (name == null){
+    public Boolean isValidName(String name) {
+        if (name == null) {
             return false;
         }
-        if (!(name instanceof String)){
+        if (!(name instanceof String)) {
             return false;
         }
 
-        if (name.trim().length()==0){
+        if (name.trim().length() == 0) {
             return false;
         }
 
         return true;
     }
+
+
+    //*********************Product*********************
+    public boolean isValidStockOrPrice(Integer stock, Double price) {
+        if (stock == null || price == null) {
+            return false;
+        }
+
+        if (stock < 0 || price <= 0) {
+            return false;
+        }
+        return true;
+    }
+
 }

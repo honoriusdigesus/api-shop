@@ -19,7 +19,7 @@ public class BeansConfig {
     }
 
     @Bean
-    public CreateProductCaseUse createProductCaseUse(ProductRepository productRepository, ProductDomainMapper productDomainMapper){
-        return new CreateProductCaseUse(productRepository, productDomainMapper);
+    public CreateProductCaseUse createProductCaseUse(ProductRepository productRepository, ProductDomainMapper productDomainMapper, Validator validator){
+        return new CreateProductCaseUse(productRepository, productDomainMapper, validator);
     }
 }
