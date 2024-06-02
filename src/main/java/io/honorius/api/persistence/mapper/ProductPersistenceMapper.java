@@ -1,6 +1,5 @@
 package io.honorius.api.persistence.mapper;
 
-import io.honorius.api.data.enttity.Product;
 import io.honorius.api.domain.entity.ProductDomain;
 import io.honorius.api.persistence.enity.ProductPersistence;
 import org.springframework.stereotype.Component;
